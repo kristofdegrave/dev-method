@@ -10,7 +10,10 @@ Analysis-first development method for Claude Code, shipped as a plugin marketpla
 
 ## Install
 
+`method` depends on Matt Pocock's `mattpocock-skills` plugin, so both marketplaces are added:
+
 ```
+/plugin marketplace add mattpocock/skills
 /plugin marketplace add kristofdegrave/dev-method
 /plugin install method@dev-method
 ```

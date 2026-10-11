@@ -6,5 +6,8 @@
     "name": "Kristof Degrave"
   },
   "repository": "https://github.com/kristofdegrave/dev-method",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": [
+    { "name": "mattpocock-skills", "marketplace": "mattpocock" }
+  ]
 }

@@ -4,6 +4,7 @@
   "owner": {
     "name": "Kristof Degrave"
   },
+  "allowCrossMarketplaceDependenciesOn": ["mattpocock"],
   "plugins": [
     {
       "name": "method",
