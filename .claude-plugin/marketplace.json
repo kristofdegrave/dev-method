@@ -1,0 +1,15 @@
+{
+  "name": "dev-method",
+  "description": "Analysis-first development method for Claude Code.",
+  "owner": {
+    "name": "Kristof Degrave"
+  },
+  "allowCrossMarketplaceDependenciesOn": ["mattpocock"],
+  "plugins": [
+    {
+      "name": "method",
+      "source": "./plugins/method",
+      "description": "The contribution workflow (issue, implement, review, fix, clean up) and the init skill that installs and upgrades the method in a project."
+    }
+  ]
+}
