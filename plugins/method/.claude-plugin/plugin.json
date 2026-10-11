@@ -1,0 +1,10 @@
+{
+  "name": "method",
+  "version": "0.1.0",
+  "description": "The contribution workflow (issue, implement, review, fix, clean up) and the init skill that installs and upgrades the method in a project.",
+  "author": {
+    "name": "Kristof Degrave"
+  },
+  "repository": "https://github.com/kristofdegrave/dev-method",
+  "license": "MIT"
+}
