@@ -1,8 +1,8 @@
 # Contribution workflow
 
 The chain every unit of work runs through, from its work item to the merge, and the rules
-each step obeys. The step skills carry the procedure; this document owns the rules they route
-to, so a rule is stated here once and nowhere in a skill.
+each step obeys. The `work` skill runs the chain, calling one step skill per step; this
+document owns the rules it routes to, so a rule is stated here once and nowhere in a skill.
 
 ## Words
 
@@ -21,6 +21,10 @@ role. This document says what happens, never which command does it.
 | 2. Review | `review` | An open change request | One posted review, then the pass's exit |
 | 3. Fix | `fix` | A posted review with findings open | Every finding answered, then step 2 again |
 | 4. Clean up | `cleanup` | The human stating the merge happened | The work item *done*, its worktree and branch gone |
+
+A step skill does its step's work and nothing around it. What surrounds a step, the worktree
+and branch, the status moves, the push, the change request, the posted review and its
+threads, is `work`'s, through the product files.
 
 - **Every unit of work has a work item before work starts**, however small.
 - **Step 1** works in its own worktree, on a branch per **Branches** below, cut from a freshly
@@ -49,11 +53,12 @@ separation is gone.
 
 ## Rule B: the chain runs through, then stops and reports
 
-- **Invoking a step skill enters the chain at that step** and runs on with no check-in
-  between steps: implement, review, fix, review, until a stop.
+- **Invoking `work` enters the chain**, at the step the work item is at, and runs on with no
+  check-in between steps: implement, review, fix, review, until a stop. A step skill run by
+  hand runs alone: it does its step and stops at its own end.
 - **It stops at a clean pass, or at the cap** (**Rounds and the cap**), and reports. A work
   file that opens no change request stops the chain where it ends.
-- **"Only this step"** is said explicitly, and then the step stops at its own end.
+- **"Only this step"** said to `work` stops it at that step's end.
 - **It never starts the next work item** off the back of the one just finished.
 - **Step 4 is never reached by running on.** It starts only from the human stating that the
   merge happened.
