@@ -6,16 +6,8 @@ to, so a rule is stated here once and nowhere in a skill.
 
 ## Words
 
-- **Work item**: one unit of work on the work tracker. An **epic** is a work item that tracks
-  its children and is never worked itself.
-- **Change request**: the reviewable change on the change host that delivers one work item.
-- **Work type**: what kind of artifact a work item produces, carried by its context label.
-  The work types catalogue routes each type to its work file, completion bar, review
-  checklist and models.
-- **The profile**: the values a project sets. A rule here names a profile key; the value
-  lives only in the profile.
-- **The human**: the person the session works with. Every decision this document does not
-  give the session is theirs.
+Terms are the [glossary](glossary.md)'s. Of them, *change request* is this document's own;
+the rest are the method's.
 
 How a step reads or writes the work tracker and the change host is the product file for that
 role. This document says what happens, never which command does it.
